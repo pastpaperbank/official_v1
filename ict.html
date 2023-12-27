@@ -164,7 +164,7 @@
                 <div class="cs_head_svg_container">
                     
                 <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.58579 2.58579C3 3.17157 3 4.11438 3 6V16C3 18.8284 3 20.2426 3.87868 21.1213C4.51998 21.7626 5.44655 21.9359 7 21.9827V19C7 18.4477 7.44772 18 8 18C8.55228 18 9 18.4477 9 19L9 22H15V19C15 18.4477 15.4477 18 16 18C16.5523 18 17 18.4477 17 19L17 21.9827C18.5534 21.9359 19.48 21.7626 20.1213 21.1213C21 20.2426 21 18.8284 21 16V6C21 4.11438 21 3.17157 20.4142 2.58579C19.8284 2 18.8856 2 17 2H7C5.11438 2 4.17157 2 3.58579 2.58579ZM8 8C7.44772 8 7 8.44772 7 9C7 9.55228 7.44772 10 8 10H16C16.5523 10 17 9.55228 17 9C17 8.44772 16.5523 8 16 8H8ZM8 14L16 14C16.5523 14 17 13.5523 17 13C17 12.4477 16.5523 12 16 12L8 12C7.44772 12 7 12.4477 7 13C7 13.5523 7.44772 14 8 14Z" fill="var(--dark-color-1)"/>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.58579 2.58579C3 3.17157 3 4.11438 3 6V16C3 18.8284 3 20.2426 3.87868 21.1213C4.51998 21.7626 5.44655 21.9359 7 21.9827V19C7 18.4477 7.44772 18 8 18C8.55228 18 9 18.4477 9 19L9 22H15V19C15 18.4477 15.4477 18 16 18C16.5523 18 17 18.4477 17 19L17 21.9827C18.5534 21.9359 19.48 21.7626 20.1213 21.1213C21 20.2426 21 18.8284 21 16V6C21 4.11438 21 3.17157 20.4142 2.58579C19.8284 2 18.8856 2 17 2H7C5.11438 2 4.17157 2 3.58579 2.58579ZM8 8C7.44772 8 7 8.44772 7 9C7 9.55228 7.44772 10 8 10H16C16.5523 10 17 9.55228 17 9C17 8.44772 16.5523 8 16 8H8ZM8 14L16 14C16.5523 14 17 13.5523 17 13C17 12.4477 16.5523 12 16 12L8 12C7.44772 12 7 12.4477 7 13C7 13.5523 7.44772 14 8 14Z" fill="var(--light-color-1)"/>
 </svg>
 
     
@@ -178,14 +178,569 @@
     
             
             <div class="warning_container">
-                <p>
-                   Past Papers for this subject are still unaviliable for Beta Version; past papers from 2023 to 2015 will be include for all subjects in officially realesed version!
-                </p>
-            </div>
+              <p>
+              All papers are Collected from Official Website (qualifications.pearson.com). We do not own any of these contents and are published for Educational Purposes only.
+              </p>
+          </div>
 
-            
+  <!-- borderline -->
+
+  <div class="search">
+      <div class="icon">
+
+      </div>
+      <div class="input">
+          <input type="text" placeholder="Type In Year" id="searchInput" oninput="filterContainers()">
+
+      </div>
+  </div>
+  <div class="no_data_parent_container">
+    <div class="no_data_message">
+        <h1>The year you entered is currently unavailable on our website. Please check that the date is correct. </h1>
+    </div>
+</div>
+
+       
+
+<div class="parent_container" data-year="2022">  
+  <div class="year_holder">
+      <h1>2022</h1>
+  </div>
+
+  <div class="main_year_paper_container">
+      <!-- may/june regional paper -->
+
+      <div class="each_month_paper_container">
+          
+          <section class="paper_container">
+              <!-- Question Paper for may/june r -->
+          <div class="inner_paper_container">
+      
+              <h1>May/June Regional Papers</h1>
+              <div class="ms_paper_1_2_container">
+                  <p>Paper-1</p>
+                  <button class="download_button" onclick="window.open('ICT_PP/2022_P1R_J_Q.pdf', '_blank')"> Download
+                  </button>
+
+              </div>
+              <div class="ms_paper_1_2_container">
+                  <p>Paper-2</p>
+                  <button class="unavailable_button"> Unavailable
+                  </button>
+
+              </div>
+          </div>
+          
+          </section>
+          <section class="marking_scheme_container">
+              <!-- marking scheme for may/june r -->
+              <div class="inner_paper_container">
+      
+                  <h1>Marking Schemes</h1>
+                  <div class="ms_paper_1_2_container">
+                      <p>Paper-1</p>
+                      <button class="download_button" onclick="window.open('ICT_MS/2022_P1R_J_MS.pdf', '_blank')"> Download
+                      </button>
+
+                  </div>
+                  <div class="ms_paper_1_2_container">
+                      <p>Paper-2</p>
+                      <button class="unavailable_button"> Unavailable
+                      </button>
+
+                  </div>
+              </div>
+          
+
+          </div>
+
+      </div>
+
+      <!-- may/june non-regional paper -->
+      <div class="each_month_paper_container">
+          
+          <section class="paper_container">
+              <!-- Question Paper for may/june non -->
+          <div class="inner_paper_container">
+      
+              <h1>May/June Non-Regional Papers</h1>
+              <div class="ms_paper_1_2_container">
+                  <p>Paper-1</p>
+                  <button class="download_button" onclick="window.open('ICT_PP/2022_P1_J_Q.pdf', '_blank')"> Download
+                  </button>
+
+              </div>
+              <div class="ms_paper_1_2_container">
+                  <p>Paper-2</p>
+                  <button class="download_button" onclick="window.open('ICT_PP/2022_P2_J_Q.pdf', '_blank')"> Download
+                  </button>
+
+              </div>
+          </div>
+          
+          </section>
+          <section class="marking_scheme_container">
+              <!-- marking scheme for may/june non -->
+              <div class="inner_paper_container">
+      
+                  <h1>Marking Schemes</h1>
+                  <div class="ms_paper_1_2_container">
+                      <p>Paper-1</p>
+                      <button class="download_button" onclick="window.open('ICT_MS/2022_P1_J_MS.pdf', '_blank')"> Download
+                      </button>
+
+                  </div>
+                  <div class="ms_paper_1_2_container">
+                      <p>Paper-2</p>
+                      <button class="download_button" onclick="window.open('ICT_MS/2022_P2_J_MS.pdf', '_blank')"> Download
+                      </button>
+
+                  </div>
+              </div>
+          </section>
+
+      </div>
 
     
+
+     
+
+</div> 
+
+
+<!-- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<div class="year_seprator">
+
+</div>
+<!-- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+
+
+
+<div class="parent_container" data-year="2021">  
+  <div class="year_holder">
+      <h1>2021</h1>
+  </div>
+
+  <div class="main_year_paper_container">
+      <!-- may/june regional paper -->
+
+      <div class="each_month_paper_container">
+          
+          <section class="paper_container">
+              <!-- Question Paper for may/june r -->
+          <div class="inner_paper_container">
+      
+              <h1>May/June Regional Papers</h1>
+              <div class="ms_paper_1_2_container">
+                  <p>Paper-1</p>
+                  <button class="unavailable_button"> Unavailable
+                  </button>
+
+              </div>
+              <div class="ms_paper_1_2_container">
+                  <p>Paper-2</p>
+                  <button class="unavailable_button"> Unavailable
+                  </button>
+
+              </div>
+          </div>
+          
+          </section>
+          <section class="marking_scheme_container">
+              <!-- marking scheme for may/june r -->
+              <div class="inner_paper_container">
+      
+                  <h1>Marking Schemes</h1>
+                  <div class="ms_paper_1_2_container">
+                      <p>Paper-1</p>
+                      <button class="unavailable_button"> Unavailable
+                      </button>
+
+                  </div>
+                  <div class="ms_paper_1_2_container">
+                      <p>Paper-2</p>
+                      <button class="unavailable_button"> Unavailable
+                      </button>
+
+                  </div>
+              </div>
+          
+
+          </div>
+
+      </div>
+
+      <!-- may/june non-regional paper -->
+      <div class="each_month_paper_container">
+          
+          <section class="paper_container">
+              <!-- Question Paper for may/june non -->
+          <div class="inner_paper_container">
+      
+              <h1>May/June Non-Regional Papers</h1>
+              <div class="ms_paper_1_2_container">
+                  <p>Paper-1</p>
+                  <button class="download_button" onclick="window.open('ICT_PP/2021_P1_J_Q.pdf', '_blank')"> Download
+                  </button>
+
+              </div>
+              <div class="ms_paper_1_2_container">
+                  <p>Paper-2</p>
+                  <button class="download_button" onclick="window.open('ICT_PP/2021_P2_J_Q.pdf', '_blank')"> Download
+                  </button>
+
+              </div>
+          </div>
+          
+          </section>
+          <section class="marking_scheme_container">
+              <!-- marking scheme for may/june non -->
+              <div class="inner_paper_container">
+      
+                  <h1>Marking Schemes</h1>
+                  <div class="ms_paper_1_2_container">
+                      <p>Paper-1</p>
+                      <button class="download_button" onclick="window.open('ICT_MS/2021_P1_J_MS.pdf', '_blank')"> Download
+                      </button>
+
+                  </div>
+                  <div class="ms_paper_1_2_container">
+                      <p>Paper-2</p>
+                      <button class="download_button" onclick="window.open('ICT_MS/2021_P2_J_MS.pdf', '_blank')"> Download
+                      </button>
+
+                  </div>
+              </div>
+          </section>
+
+      </div>
+
+      <hr class="subject_line">
+
+      <!-- November Regional Papers -->
+
+      <div class="each_month_paper_container">
+          
+      <section class="paper_container">
+              <!-- Question Paper for November r -->
+          <div class="inner_paper_container">
+      
+              <h1>November Regional Papers</h1>
+              <div class="ms_paper_1_2_container">
+                  <p>Paper-1</p>
+                  <button class="unavailable_button"> Unavailable
+                  </button>
+
+              </div>
+              <div class="ms_paper_1_2_container">
+                  <p>Paper-2</p>
+                  <button class="unavailable_button"> Unavailable
+                  </button>
+
+              </div>
+          </div>
+          
+          </section>
+          <section class="marking_scheme_container">
+              <!-- marking scheme for November r -->
+              <div class="inner_paper_container">
+      
+                  <h1>Marking Schemes</h1>
+                  <div class="ms_paper_1_2_container">
+                      <p>Paper-1</p>
+                      <button class="unavailable_button"> Unavailable
+                      </button>
+
+                  </div>
+                  <div class="ms_paper_1_2_container">
+                      <p>Paper-2</p>
+                      <button class="unavailable_button"> Unavailable
+                      </button>
+
+                  </div>
+              </div>
+          </section>
+
+      </div>
+
+      <!-- November non-regional paper -->
+      <div class="each_month_paper_container">
+          
+      <section class="paper_container">
+              <!-- Question Paper for November non -->
+          <div class="inner_paper_container">
+      
+              <h1>November Non-Regional Papers</h1>
+              <div class="ms_paper_1_2_container">
+                  <p>Paper-1</p>
+                  <button class="download_button" onclick="window.open('ICT_PP/2021_P1_N_Q.pdf', '_blank')"> Download
+                  </button>
+
+              </div>
+              <div class="ms_paper_1_2_container">
+                  <p>Paper-2</p>
+                  <button class="download_button" onclick="window.open('ICT_PP/2021_P2_N_Q.pdf', '_blank')"> Download
+                  </button>
+
+              </div>
+          </div>
+          
+          </section>
+          <section class="marking_scheme_container">
+              <!-- marking scheme for November non -->
+              <div class="inner_paper_container">
+      
+                  <h1>Marking Schemes</h1>
+                  <div class="ms_paper_1_2_container">
+                      <p>Paper-1</p>
+                      <button class="download_button" onclick="window.open('ICT_MS/2021_P1_N_MS.pdf', '_blank')"> Download
+                      </button>
+
+                  </div>
+                  <div class="ms_paper_1_2_container">
+                      <p>Paper-2</p>
+                      <button class="download_button" onclick="window.open('ICT_MS/2021_P2_N_MS.pdf', '_blank')"> Download
+                      </button>
+
+                  </div>
+              </div>
+          </section>
+      </div>
+
+  </div>
+
+</div> 
+
+
+
+
+
+
+<!-- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<div class="year_seprator">
+
+</div>
+<!-- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+    
+
+<div class="parent_container" data-year="2020">  
+  <div class="year_holder">
+      <h1>2020</h1>
+  </div>
+
+  
+
+      <!-- November Regional Papers -->
+
+      <div class="each_month_paper_container">
+          
+      <section class="paper_container">
+              <!-- Question Paper for November r -->
+          <div class="inner_paper_container">
+      
+              <h1>November Regional Papers</h1>
+              <div class="ms_paper_1_2_container">
+                  <p>Paper-1</p>
+                  <button class="download_button" onclick="window.open('ICT_PP/2020_P1R_N_Q.pdf', '_blank')"> Download
+                  </button>
+
+              </div>
+              <div class="ms_paper_1_2_container">
+                  <p>Paper-2</p>
+                  <button class="unavailable_button"> Unavailable
+                  </button>
+
+              </div>
+          </div>
+          
+          </section>
+          <section class="marking_scheme_container">
+              <!-- marking scheme for November r -->
+              <div class="inner_paper_container">
+      
+                  <h1>Marking Schemes</h1>
+                  <div class="ms_paper_1_2_container">
+                      <p>Paper-1</p>
+                      <button class="download_button" onclick="window.open('ICT_MS/2020_P1R_N_MS.pdf', '_blank')"> Download
+                      </button>
+
+                  </div>
+                  <div class="ms_paper_1_2_container">
+                      <p>Paper-2</p>
+                      <button class="unavailable_button"> Unavailable
+                      </button>
+
+                  </div>
+              </div>
+          </section>
+
+      </div>
+
+      <!-- November non-regional paper -->
+      <div class="each_month_paper_container">
+          
+      <section class="paper_container">
+              <!-- Question Paper for November non -->
+          <div class="inner_paper_container">
+      
+              <h1>November Non-Regional Papers</h1>
+              <div class="ms_paper_1_2_container">
+                  <p>Paper-1</p>
+                  <button class="download_button" onclick="window.open('ICT_PP/2020_P1_N_Q.pdf', '_blank')"> Download
+                  </button>
+
+              </div>
+              <div class="ms_paper_1_2_container">
+                  <p>Paper-2</p>
+                  <button class="download_button" onclick="window.open('ICT_PP/2020_P2_N_Q.pdf', '_blank')"> Download
+                  </button>
+
+              </div>
+          </div>
+          
+          </section>
+          <section class="marking_scheme_container">
+              <!-- marking scheme for November non -->
+              <div class="inner_paper_container">
+      
+                  <h1>Marking Schemes</h1>
+                  <div class="ms_paper_1_2_container">
+                      <p>Paper-1</p>
+                      <button class="download_button" onclick="window.open('ICT_MS/2020_P1_N_MS.pdf', '_blank')"> Download
+                      </button>
+
+                  </div>
+                  <div class="ms_paper_1_2_container">
+                      <p>Paper-2</p>
+                      <button class="download_button" onclick="window.open('ICT_MS/2020_P2_N_MS.pdf', '_blank')"> Download
+                      </button>
+
+                  </div>
+              </div>
+          </section>
+      </div>
+
+  </div>
+
+</div> 
+
+
+
+
+
+
+<!-- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<div class="year_seprator">
+
+</div>
+<!-- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+  
+    
+<div class="parent_container" data-year="2019">  
+  <div class="year_holder">
+      <h1>2019</h1>
+  </div>
+
+  <div class="main_year_paper_container">
+      <!-- may/june regional paper -->
+
+      <div class="each_month_paper_container">
+          
+          <section class="paper_container">
+              <!-- Question Paper for may/june r -->
+          <div class="inner_paper_container">
+      
+              <h1>May/June Regional Papers</h1>
+              <div class="ms_paper_1_2_container">
+                  <p>Paper-1</p>
+                  <button class="download_button" onclick="window.open('ICT_PP/2019_P1R_J_Q.pdf', '_blank')"> Download
+                  </button>
+
+              </div>
+              <div class="ms_paper_1_2_container">
+                  <p>Paper-2</p>
+                  <button class="unavailable_button"> Unavailable
+                  </button>
+
+              </div>
+          </div>
+          
+          </section>
+          <section class="marking_scheme_container">
+              <!-- marking scheme for may/june r -->
+              <div class="inner_paper_container">
+      
+                  <h1>Marking Schemes</h1>
+                  <div class="ms_paper_1_2_container">
+                      <p>Paper-1</p>
+                      <button class="download_button" onclick="window.open('ICT_MS/2019_P1R_J_MS.pdf', '_blank')"> Download
+                      </button>
+
+                  </div>
+                  <div class="ms_paper_1_2_container">
+                      <p>Paper-2</p>
+                      <button class="unavailable_button"> Unavailable
+                      </button>
+
+                  </div>
+              </div>
+          
+
+          </div>
+
+      </div>
+
+      <!-- may/june non-regional paper -->
+      <div class="each_month_paper_container">
+          
+          <section class="paper_container">
+              <!-- Question Paper for may/june non -->
+          <div class="inner_paper_container">
+      
+              <h1>May/June Non-Regional Papers</h1>
+              <div class="ms_paper_1_2_container">
+                  <p>Paper-1</p>
+                  <button class="download_button" onclick="window.open('ICT_PP/2019_P1_J_Q.pdf', '_blank')"> Download
+                  </button>
+
+              </div>
+              <div class="ms_paper_1_2_container">
+                  <p>Paper-2</p>
+                  <button class="download_button" onclick="window.open('ICT_PP/2019_P2_J_Q.pdf', '_blank')"> Download
+                  </button>
+
+              </div>
+          </div>
+          
+          </section>
+          <section class="marking_scheme_container">
+              <!-- marking scheme for may/june non -->
+              <div class="inner_paper_container">
+      
+                  <h1>Marking Schemes</h1>
+                  <div class="ms_paper_1_2_container">
+                      <p>Paper-1</p>
+                      <button class="download_button" onclick="window.open('ICT_MS/2019_P1_J_MS.pdf', '_blank')"> Download
+                      </button>
+
+                  </div>
+                  <div class="ms_paper_1_2_container">
+                      <p>Paper-2</p>
+                      <button class="download_button" onclick="window.open('ICT_MS/2019_P2_J_MS.pdf', '_blank')"> Download
+                      </button>
+
+                  </div>
+              </div>
+          </section>
+
+      </div>
+
+
+  </div>
+
+</div> 
 
 
 
