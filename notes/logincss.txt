@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: #F0EEE9;
+    background-size: cover;
+    background-position: center;
+}
+
+.header h1{
+    font-size: 50px;
+    color: #57c6ce;
+}
+.header p{
+    font-size: 25px;
+}
+.login-box {
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background: #F0EEE9;
+    border: 2px solid rgba(82, 82, 82, 0.5);
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+h2 {
+   font-size: 2em;
+   color: #444444;
+   text-align: center;
+}
+
+.input-box {
+    position: relative;
+    width: 310px;
+    margin: 30px 0;
+    border-bottom: 2px solid #979797;
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #444444;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label {
+    top: -5px;
+}
+
+.input-box input{
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: #444444;
+    padding: 0 35px 0 5px;
+}
+
+.input-box .icon{
+    position: absolute;
+    right: 8px;
+    color: #444444;
+    font-size: 1.2rem;
+    line-height: 57px;
+}
+
+.remember-forgot{
+    margin: -15p 0 15px ;
+    font-size: .9em;
+    color: #444444;
+    display: flex;
+    justify-content: space-between;
+}
+
+.remember-forgot label input {
+    margin-right: 3px;
+}
+
+.remember-forgot a {
+    color: #444444;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+button {
+    width: 100%;
+    height: 40px;
+    background: #444444;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #000;
+    font-weight: 500;
+}
+
+button a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.register-link {
+    font-size: .9em;
+    color: #444444;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+
+.register-link p a {
+    color: #444444;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link p a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 1000px) {
+
+    section{
+        flex-direction: column;
+    }
+    .header{
+        margin-top: 70px;
+    }
+    .header h1{
+        font-size: 35px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .header p{
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .login-box {
+        width: 100%;
+        height: 100vh;
+        border: none;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .input-box{
+        width: 290px;
+    }
+}

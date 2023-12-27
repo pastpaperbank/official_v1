@@ -1,0 +1,20 @@
+
+
+-------------  Short term of month ------------- 
+1. feb/march (or) January = F
+2.  may/june (or) November = J
+
+
+------------- Naming The Past Paper ------------- 
+
+For paper-1 Question Paper
+year_P1_month_Q
+
+For paper-1R Question Paper
+year_P1R_month_Q
+
+For paper-1 Marking Scheme
+year_P1_month_MS
+
+For paper-1R Marking Scheme
+year_P1R_month_MS

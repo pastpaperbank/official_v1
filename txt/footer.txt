@@ -1,0 +1,95 @@
+<script src="js/ads.js"></script>
+<script src="js/searchbar.js"></script>
+
+
+
+    <!-- Swiper JS -->
+    <script src="js/swiper-bundle.min.js"></script>
+    
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+
+    <script src="js/faq.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+    const hoverDiv = document.querySelector('.first_sidebar_clicker');
+
+    hoverDiv.addEventListener('mouseenter', function() {
+        hoverDiv.classList.add('lighten');
+    });
+
+    hoverDiv.addEventListener('mouseleave', function() {
+        hoverDiv.classList.remove('lighten');
+    });
+});
+        document.addEventListener("DOMContentLoaded", function() {
+    const hoverDiv = document.querySelector('.second_sidebar_clicker');
+
+    hoverDiv.addEventListener('mouseenter', function() {
+        hoverDiv.classList.add('lighten');
+    });
+
+    hoverDiv.addEventListener('mouseleave', function() {
+        hoverDiv.classList.remove('lighten');
+    });
+});
+        document.addEventListener("DOMContentLoaded", function() {
+    const hoverDiv = document.querySelector('.third_sidebar_clicker');
+
+    hoverDiv.addEventListener('mouseenter', function() {
+        hoverDiv.classList.add('lighten');
+    });
+
+    hoverDiv.addEventListener('mouseleave', function() {
+        hoverDiv.classList.remove('lighten');
+    });
+});
+
+
+
+// Retrieve the current theme from localStorage
+var currentTheme = localStorage.getItem('theme');
+if (currentTheme) {
+    document.body.classList.add(currentTheme);
+}
+
+// Apply the user's preferred theme on page load
+function applyPreferredTheme() {
+    const preferredTheme = localStorage.getItem('theme');
+    if (preferredTheme) {
+        document.body.classList.add(preferredTheme);
+    }
+}
+
+// Call the function to apply the preferred theme on page load
+applyPreferredTheme();
+
+// Get the darkmode_toggle button
+var darkmode_toggle = document.getElementById("darkmode_toggle");
+
+// Set initial state of the toggle button based on current theme
+darkmode_toggle.checked = document.body.classList.contains('dark_theme');
+
+// Toggle theme on button click
+darkmode_toggle.onclick = function() {
+    // Toggle the "dark_theme" class on the body
+    document.body.classList.toggle("dark_theme");
+
+    // Update the current theme in localStorage
+    currentTheme = document.body.classList.contains('dark_theme') ? 'dark_theme' : '';
+    localStorage.setItem('theme', currentTheme);
+
+    // Update the state of the toggle button
+    darkmode_toggle.checked = document.body.classList.contains('dark_theme');
+};
+
+
+
+
+
+        
+    </script>
+    </body>
+</html>

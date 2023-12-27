@@ -1,0 +1,61 @@
+
+<?php
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+require 'path/to/PHPMailer/src/PHPMailer.php';
+require 'path/to/PHPMailer/src/SMTP.php';
+require 'path/to/PHPMailer/src/Exception.php';
+
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
+if ($_SERVER["REQUEST_METHOD"] === "POST") {
+    $name = htmlspecialchars($_POST['name']);
+    $email = htmlspecialchars($_POST['email']);
+    $phone = htmlspecialchars($_POST['phone']);
+    $website = htmlspecialchars($_POST['website']);
+    $message = htmlspecialchars($_POST['message']);
+
+    if (!empty($email) && !empty($message)) {
+        if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            $receiver = "pastpaperbank2@gmail.com";
+            $subject = "From: $name <$email>";
+            $body = "Name: $name\nEmail: $email\nPhone: $phone\nWebsite: $website\n\nMessage:\n$message\n\nRegards,\n$name";
+
+            $mail = new PHPMailer(true);
+            
+            // SMTP configuration
+            $mail->isSMTP();
+            $mail->Host = 'smtp.gmail.com';
+            $mail->SMTPAuth = true;
+            $mail->Username = 'pastpaperbank2@gmail.com'; // Your Gmail address
+            $mail->Password = 'pacse0-peRzum-mebgyf'; // Your Gmail password
+            $mail->SMTPSecure = 'tls';
+            $mail->Port = 587;
+
+            // Sender and recipient
+            $mail->setFrom($email, $name);
+            $mail->addAddress($receiver);
+
+            // Email content
+            $mail->Subject = $subject;
+            $mail->Body = $body;
+
+            // Send the email
+            try {
+                $mail->send();
+                echo "success";
+            } catch (Exception $e) {
+                echo "failed to send. Error: {$mail->ErrorInfo}";
+            }
+        } else {
+            echo "invalid email";
+        }
+    } else {
+        echo "email and message fields are required";
+    }
+} else {
+    echo "invalid request";
+}
+?>

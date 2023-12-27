@@ -1,0 +1,39 @@
+/* Default styles for cursor */
+body {
+    cursor: none;
+}
+
+.cursor-dot {
+    width: 5px;
+    height: 5px;
+    background-color: #DF6666;
+}
+
+.cursor-outline {
+    width: 30px;
+    height: 30px;
+    border: 2px solid #DF6666;
+}
+
+.cursor-dot,
+.cursor-outline {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 10000;
+    pointer-events: none;
+}
+
+/* Media query to disable cursor on touch devices */
+@media (hover: none) and (pointer: coarse) {
+    body {
+        cursor: none;
+    }
+
+    .cursor-dot,
+    .cursor-outline {
+        display: none;
+    }
+}

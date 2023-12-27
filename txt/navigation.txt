@@ -1,0 +1,102 @@
+
+    <div class="main_nav_bar_wrapper">
+
+        
+<div class="nav_bar_wrapper">
+    <div class="wrapper_hamburger_menu">
+
+        <label class="hamburger_menu">
+            <input type="checkbox" >
+        </label>
+
+        <asid class="sidebar">
+            <nav>
+                <div class="fill_sidebar_clicker"></div>
+
+                <a href="home.html" class="first_sidebar_clicker_a_b"><div class="first_sidebar_clicker"><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="m19.707 9.293-2-2-7-7a1 1 0 0 0-1.414 0l-7 7-2 2a1 1 0 0 0 1.414 1.414L2 10.414V18a2 2 0 0 0 2 2h3a1 1 0 0 0 1-1v-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4a1 1 0 0 0 1 1h3a2 2 0 0 0 2-2v-7.586l.293.293a1 1 0 0 0 1.414-1.414Z"/>
+                  </svg> <h1>HOME</h1></div>
+                </a>
+
+                  <hr class="sidebar_hr">
+
+                <div class="second_sidebar_clicker"><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 20">
+                    <path d="M16 14V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v15a3 3 0 0 0 3 3h12a1 1 0 0 0 0-2h-1v-2a2 2 0 0 0 2-2ZM4 2h2v12H4V2Zm8 16H3a1 1 0 0 1 0-2h9v2Z"/>
+                  </svg> <h1>SUBJECTS</h1> <i class="fas fa-caret-down"></i>
+                  <div class="dropdown_menu">
+                    <ul>
+                        <li><a href="fp_math.html">F.P Math</a></li>
+                        <hr class="sidebar_hr">
+                        <li><a href="math_b.html">Math B</a></li>
+                        <hr class="sidebar_hr">
+                        <li><a href="english.html">ESL</a></li>
+                        <hr class="sidebar_hr">
+
+                        <li><a href="physics.html">Physics</a></li>
+                        <hr class="sidebar_hr">
+                        <li><a href="chemistry.html">Chemistry</a></li>
+                        <hr class="sidebar_hr">
+                        <li><a href="biology.html">Biology</a></li>
+                        <hr class="sidebar_hr">
+
+                        <li><a href="computer_science.html">CS</a></li>
+                        <hr class="sidebar_hr">
+                        <li><a href="business.html">Business</a></li>
+                        <hr class="sidebar_hr">
+                        <li><a href="ict.html">ICT</a></li>
+                        <hr class="sidebar_hr">
+                        <li><a href="accounting.html">Accounting</a></li>
+                        <hr class="sidebar_hr">
+
+
+                    </ul>
+                  </div>
+                
+                </div>
+
+                <hr class="sidebar_hr">
+
+                <a href="aboutus.html" class="first_sidebar_clicker_a_b">
+                    <div class="third_sidebar_clicker"><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 18">
+                    <path d="M14 2a3.963 3.963 0 0 0-1.4.267 6.439 6.439 0 0 1-1.331 6.638A4 4 0 1 0 14 2Zm1 9h-1.264A6.957 6.957 0 0 1 15 15v2a2.97 2.97 0 0 1-.184 1H19a1 1 0 0 0 1-1v-1a5.006 5.006 0 0 0-5-5ZM6.5 9a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9ZM8 10H5a5.006 5.006 0 0 0-5 5v2a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1v-2a5.006 5.006 0 0 0-5-5Z"/>
+                  </svg> <h1>ABOUT US</h1></div>
+
+                </a>
+
+
+                  
+
+                  <div class="fill2_sidebar_clicker">
+
+                  </div>
+                 
+               
+            </nav>
+
+        </asid>
+
+    </div>
+
+    <div class="website_name_holder">
+        <h1>PAST PAPER BANK</h1>
+
+    </div>
+
+    
+    
+    <div class="left_sider_nav_wrapper">
+    <div class="mother">
+    
+
+        <input type="checkbox" id="darkmode_toggle" >
+        <label for="darkmode_toggle" >
+            
+        </label>
+    </div>
+    </div>
+   
+
+</div>
+<hr class="nav_bar_line">
+
+</div>
