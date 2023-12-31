@@ -11,6 +11,7 @@
 </script>
     <title>Past Paper Bank</title>
     <link rel="shortcut icon" type="x-icon" href="img/logo.jpg">
+    <link rel="stylesheet" href="css/new_year.css">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
@@ -156,6 +157,57 @@
 <!-- 
 
       //////////////////////////////////////////////////////// -->
+
+      <div class="wrapper5">
+        <h1 class="new_year">Countdown to New Year 2024</h1>
+        <div class="wrapper_new">
+            <div class="countdown">
+                <div class="box">
+                    <span class="num" id="days">00</span>
+                    <span class="text1">Days</span>
+                </div>
+                <div class="box">
+                    <span class="num" id="hours">00</span>
+                    <span class="text1">Hours</span>
+                </div>
+                <div class="box">
+                    <span class="num" id="minutes">00</span>
+                    <span class="text1">Minutes</span>
+                </div>
+                <div class="box">
+                    <span class="num" id="seconds">00</span>
+                    <span class="text1">Seconds</span>
+                </div>
+            </div>
+        </div>
+        <script src="confetti.js"></script>
+        <!-- Confetti JS-->
+        <script src="confetti.js"></script>
+    <!-- Confetti  JS-->
+    <script>
+
+        // start
+
+        const start = () => {
+            setTimeout(function() {
+                confetti.start()
+            }, 1000); // 1000 is time that after 1 second start the confetti ( 1000 = 1 sec)
+        };
+
+        //  Stop
+
+        const stop = () => {
+            setTimeout(function() {
+                confetti.stop()
+            }, 5000); // 5000 is time that after 5 second stop the confetti ( 5000 = 5 sec)
+        };
+
+        start();
+        stop();
+    </script> 
+    </div>
+    
+     
     
         
 
@@ -684,6 +736,8 @@ darkmode_toggle.onclick = function() {
       });
     });
   </script>
+
+  <script src="js/new_year.js"></script>
     
     
   </body>
